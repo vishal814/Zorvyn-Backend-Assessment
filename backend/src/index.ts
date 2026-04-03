@@ -35,7 +35,7 @@ const swaggerOptions = {
       version: '1.0.0',
       description: 'API for finance tracking, records, users, and dashboard data',
     },
-    servers: [{ url: 'http://localhost:5000' }],
+    servers: [{ url: '/' }],
     components: {
       securitySchemes: {
         bearerAuth: {
