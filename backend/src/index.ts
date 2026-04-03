@@ -1,5 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import cors from 'cors';
 import { connectDB } from './config/db';
 import { errorHandler, notFound } from './middlewares/error.middleware';
 
@@ -18,6 +19,7 @@ const app = express();
 connectDB();
 
 // Middlewares
+app.use(cors());
 app.use(express.json());
 
 // Main Route
